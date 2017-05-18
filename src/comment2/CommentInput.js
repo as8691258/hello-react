@@ -38,6 +38,7 @@ class CommentInput extends Component{
             this.props.onSubmit({
                 username: this.state.username,
                 content: this.state.content,
+                createTime:+new Date()
             })
 
             this.setState({ content: '' })
@@ -66,7 +67,7 @@ class CommentInput extends Component{
         return(
             <div className='comment-input'>
                 <div className='comment-field'>
-                    <span className='comment-field-name'>用户名：</span>
+                    <span className='comment-field-name'>用户名2：</span>
                     <div className='comment-field-input'>
                         <input onBlur={this.handleUsernameBlur.bind(this)}
                             value={this.state.username}
@@ -74,10 +75,10 @@ class CommentInput extends Component{
                     </div>
                 </div>
                 <div className='comment-field'>
-                    <span className='comment-field-name'>评论内容：</span>
+                    <span className='comment-field-name'>评论内容2：</span>
                     <div className='comment-field-input'>
             <textarea
-                ref={(textara)=>this.textarea = textarea}
+                ref={(textarea)=>this.textarea = textarea}
                 value={this.state.content}
                 onChange={this.handleContentChange.bind(this)} />
                     </div>
