@@ -4,3 +4,5 @@ immutable  http://facebook.github.io/immutable-js/docs/#/
 ## 课程描述
 学习react的很好的入门教程
  
+ webpack 配置
+http://blog.csdn.net/pcaxb/article/details/52212367
